@@ -2,6 +2,7 @@
 #años que ha cumplido (desde 1 hasta su edad)
 
 def
+
 mostrar_anios_cumplidos(edad):
 
 for i in range(1, edad + 1):
@@ -20,6 +21,8 @@ try:
     
     print(por favor,ingrese un número entero válido para la edad.")
     
+
+
 crear un programa  que muestre por terminal la 
 #siguiente figura:
 #a
