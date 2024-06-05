@@ -147,7 +147,86 @@ print(copia_lista)
 # tarea 
 
 # mostrar lista con los 4 diccionarios 
-#editar el 3ro registro y cambiarle la edad sin modificar la lista original 
+# editar el 3ro registro y cambiarle la edad sin modificar la lista original 
 # mostrar la lista original y luego la lista con el registo y cambiarle la edad sin modificar la lista original
-#mostrar la lista original y luego la lista con el 3ro registro modificado.
+# mostrar la lista original y luego la lista con el 3ro registro modificado.
 
+# yo como dueño de si mascota 
+# deseo ver una lista de mis mascotas 
+# para tomar un resumen o control de ellos ||   
+
+# Lista de mascotas
+mascotas = [
+    {"nombre": "Luna", "especie": "Perro", "edad": 3},
+    {"nombre": "Max", "especie": "Gato", "edad": 5},
+    {"nombre": "Coco", "especie": "Pájaro", "edad": 2},
+    # Agrega más mascotas según sea necesario
+]
+
+# Función para mostrar la lista de mascotas
+def mostrar_mascotas():
+    print("Lista de mascotas:")
+    for mascota in mascotas:
+        print(f"Nombre: {mascota['nombre']}, Especie: {mascota['especie']}, Edad: {mascota['edad']}")
+    print()
+
+# Llamada a la función para mostrar la lista de mascotas
+mostrar_mascotas()
+
+    # yo como dueño de mi mascota 
+    # deseo actulizarr la edad de si mascota 
+    # para tener un lista correcto de mi mascota 
+
+    # Lista de mascotas
+mascotas = [
+    {"nombre": "Luna", "especie": "Perro", "edad": 3},
+    {"nombre": "Max", "especie": "Gato", "edad": 5},
+    {"nombre": "Coco", "especie": "Pájaro", "edad": 2},
+    # Agrega más mascotas según sea necesario
+]
+
+# Función para mostrar la lista de mascotas
+def mostrar_mascotas():
+    print("Lista de mascotas:")
+    for mascota in mascotas:
+        print(f"Nombre: {mascota['nombre']}, Especie: {mascota['especie']}, Edad: {mascota['edad']}")
+    print()
+
+# Función para actualizar la edad de una mascota
+def actualizar_edad_mascota(nombre_mascota, nueva_edad):
+    for mascota in mascotas:
+   ♠     if mascota["nombre"] == nombre_mascota:
+            mascota["edad"] = nueva_edad
+            print(f"Se ha actualizado la edad de {nombre_mascota} a {nueva_edad}.")
+            return
+    print(f"No se encontró la mascota con el nombre {nombre_mascota}.")
+
+# Llamada a la función para mostrar la lista de mascotas antes de la actualización
+mostrar_mascotas()
+
+# Actualizar la edad de una mascota específica
+nombre_mascota_a_actualizar = "Luna"
+nueva_edad_mascota = 4
+actualizar_edad_mascota(nombre_mascota_a_actualizar, nueva_edad_mascota)
+
+# Llamada a la función para mostrar la lista de mascotas después de la actualización
+mostrar_mascotas()
+
+
+
+
+#  yo como cordinador 
+# habilito la edición de notas para el docente 
+# para que pueda actualizar las notas del estudiante  
+
+
+### 8. listas y diccionarios por compreción 
+
+es una tecnica pythonica que nos permite crear listas y diccionarios en una sola linea conbinadio 
+bucles y deciciones 
+
+>[!NOTE]
+>**VIC** value loop condicion - valor bucle condicion 
+```python
+
+```

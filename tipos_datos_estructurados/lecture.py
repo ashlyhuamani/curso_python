@@ -40,3 +40,17 @@ print()
 print("Lista con el tercer registro modificado:")
 for mascota in mascotas_modificadas:
     print(mascota)
+
+
+# crear una lista de numeros enteros del siguiente texto 
+# texto="1,4,8,9,6"
+# nueva_lista=[]
+# for n texto.split(",")
+#    nueva_lista.append(int(n))
+# print(nueva lista)
+# aplicando la tecnica vlc valor bucle y condicion
+
+texto="1,4,8,9,6"
+neuva_lista=[int(n)for n in texto.split(",")if n%2==0]
+print(nueva_lista)
+
