@@ -228,5 +228,18 @@ bucles y deciciones
 >[!NOTE]
 >**VIC** value loop condicion - valor bucle condicion 
 ```python
+# lista por comprecion
+texto="1,4,8,9,6"
+neuva_lista=[int(n)for n in texto.split(",")if n%2==0]
+print(nueva_lista)
 
+```
+```python
+# diccionario por comprencion 
+
+lista_amigos("abel","anthony","edith","ruth")
+diccionario=()
+for _,v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+print(diccionario)
 ```
