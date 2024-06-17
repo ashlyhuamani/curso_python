@@ -144,4 +144,15 @@ print(): Imprime un mensaje en la consola o en la salida estándar.
 Estas son solo algunas de las funciones internas más comunes en Python, pero hay muchas más disponibles. Puedes encontrar una lista completa de las funciones internas de Python en la documentación oficial de Python.
 Recuerda que las funciones internas son parte del lenguaje Python y están disponibles para su uso directo sin necesidad de importar módulos adicionales.
 
-  
+## Tipos de funciones 
+### funciones anonimas (funciones lambda)
+una funcion no tiene nombre
+`lambad:"hola"`
+### funciones closure
+una funcion que dentro tiene otra funcion
+`def saludo(nombre):
+ print(f"bienvenido (nombre)")`
+### funciones callback
+funciones que reciben por parametro otra funcion
+`int(input("ingrese un numero"))`
+### Programacion funcional
