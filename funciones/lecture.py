@@ -64,10 +64,36 @@
 # suma(4,7,8,5,2,4)
 
 # empaquetar y desampaquetar de argumento nominales 
-def alumnos (**kwargs):
-    kwargs["nombre"]="abel"
-    print(kwargs)
-alumnos(nombre="miguel",apellido"largo",edad=30)
+#def alumnos (**kwargs):
+#    kwargs["nombre"]="abel"
+#    print(kwargs)
+#alumnos(nombre="miguel",apellido"largo",edad=30)
 
+## ejemplo de lambda
+#saludo=lambda n:f "hola, {n] , {a}"
+#print(saludo("ruth","castillo"))
 
+# crear un programa anonimo que reciba como parametro una lista de 5 numeros y retorne dos listas una con
+# los numeros pares y otra con numeros impares
 
+# Definir la lista de 5 números de ejemplo
+numeros = [23, 4, 11, 8, 17]
+
+# Crear funciones lambda para separar los números pares e impares
+separar_pares_impares = lambda numeros: ([x for x in numeros if x % 2 == 0], [x for x in numeros if x % 2 != 0])
+
+# Obtener las listas de números pares e impares sin filtrar
+numeros_pares, numeros_impares = separar_pares_impares(numeros)
+
+# Imprimir los resultados
+print("Números pares:", numeros_pares)
+print("Números impares:", numeros_impares)
+
+int(input())
+
+def mensaje(m:funciones)
+    print(m)
+def pedir_nombre()
+    nombre=input("ingresar nombre")
+    return nombre
+mensaje(pedir_nombre())

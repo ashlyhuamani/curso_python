@@ -148,6 +148,7 @@ Recuerda que las funciones internas son parte del lenguaje Python y están dispo
 ### funciones anonimas (funciones lambda)
 una funcion no tiene nombre
 `lambad:"hola"`
+
 ### funciones closure
 una funcion que dentro tiene otra funcion
 `def saludo(nombre):
@@ -155,4 +156,113 @@ una funcion que dentro tiene otra funcion
 ### funciones callback
 funciones que reciben por parametro otra funcion
 `int(input("ingrese un numero"))`
-### Programacion funcional
+### Programacion funcion
+la programacion funcional no requiere y que sepas como desarrollador y ejecuta el procesamiento de la informacion.
+
+**ejemplos:**
+```python
+# programcion interativa
+lista=[5,7,8,4,1]
+del num_minimo(1):
+    minimo=1[0]
+    for n in 1:
+        if n < minimo:
+            minimo=n
+    return minimo
+#programacion funcional 
+min(lista)
+```
+#### AVERIGUAR SOBRE MAP(), FILTER(), REDUCE() (tarea)
+**`MAP():`**
+
+La función **map()** en Python es una función integrada que se utiliza para aplicar una función dada a cada elemento de un iterable (como una lista, tupla, etc.) y devuelve un iterador que contiene los resultados. La sintaxis general de la función map() es la siguiente :
+```python
+map(funcion, iterable)
+```
+* funcion: Es la función que se aplicará a cada elemento del iterable.
+* iterable: Es el iterable (lista, tupla, etc.) al que se aplicará la función.
+  
+Aquí tienes un ejemplo básico de cómo se utiliza la función map():
+```python
+# Definir una función para duplicar un número
+def duplicar(x):
+    return x * 2
+
+# Crear una lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Utilizar la función map() para duplicar cada número en la lista
+resultado = map(duplicar, numeros)
+
+# Convertir el resultado a una lista
+resultado_lista = list(resultado)
+
+print(resultado_lista)  # Output: [2, 4, 6, 8, 10]
+```
+En este ejemplo, la función duplicar(x) duplica un número dado. Luego, utilizamos la función map() para aplicar la función duplicar a cada elemento de la lista numeros. El resultado es un iterador que contiene los números duplicados. Al convertir este iterador en una lista, obtenemos una lista con los números duplicados.
+
+**`FILTER()`**
+
+La función `filter()` en Python es una función integrada que se utiliza para filtrar elementos de un iterable (como una lista, tupla, etc.) según una función de filtro dada. La función `filter()` devuelve un iterador que contiene los elementos para los cuales la función de filtro devuelve True. La sintaxis general de la función filter() es la siguiente:
+
+```python
+filter(funcion_filtro, iterable)
+```
+* funcion_filtro: Es la función que se utiliza para evaluar cada elemento del iterable. Debe devolver True o False.
+* iterable: Es el iterable (lista, tupla, etc.) del cual se desean filtrar los elementos.
+* 
+Aquí tienes un ejemplo básico de cómo se utiliza la función filter():
+
+```python
+# Definir una función para filtrar números pares
+def es_par(x):
+    return x % 2 == 0
+
+# Crear una lista de números
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Utilizar la función filter() para filtrar los números pares de la lista
+resultado = filter(es_par, numeros)
+
+# Convertir el resultado a una lista
+numeros_pares = list(resultado)
+
+print(numeros_pares)  # Output: [2, 4, 6, 8, 10]
+```
+En este ejemplo, la función es_par(x) evalúa si un número dado es par. Luego, utilizamos la función filter() para filtrar los números pares de la lista numeros. El resultado es un iterador que contiene solo los números pares. Al convertir este iterador en una lista, obtenemos una lista con los números pares.
+
+
+La función filter() es útil cuando se desea filtrar elementos de un iterable basado en una condición específica.
+
+ Puede ser utilizada en combinación con funciones lambda para operaciones de filtrado rápidas y eficientes.
+
+**`REDUCE()`**
+
+La función `reduce()` en Python se encuentra en el módulo functools y se utiliza para aplicar una función de manera acumulativa a los elementos de un iterable, de izquierda a derecha, de manera que los elementos se reducen a un solo valor. La función `reduce()` requiere al menos dos argumentos: la función a aplicar y el iterable sobre el cual se aplicará la función. La sintaxis general de la función `reduce()` es la siguiente:
+```python
+functools.reduce(funcion, iterable)
+```
+* funcion: Es la función que se aplica de manera acumulativa a los elementos del iterable.
+* iterable: Es el iterable (lista, tupla, etc.) sobre el cual se aplicará la función de reducción.
+* 
+Es importante tener en cuenta que a partir de Python 3, la función `reduce()` se ha movido al módulo functools, por lo que primero debes importarla antes de poder utilizarla.
+
+ Aquí tienes un ejemplo básico de cómo se utiliza la función `reduce()` para encontrar el producto de una lista de números:
+ ```python
+ from functools import reduce
+
+# Definir una función para multiplicar dos números
+def multiplicar(x, y):
+    return x * y
+
+# Crear una lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Utilizar la función reduce() para encontrar el producto de los números
+resultado = reduce(multiplicar, numeros)
+
+print(resultado)  # Output: 120 (1 * 2 * 3 * 4 * 5)
+```
+En este ejemplo, la función `multiplicar(x, y)` se utiliza para multiplicar dos números. Luego, utilizamos la función `reduce()` para aplicar esta función de manera acumulativa a los elementos de la lista numeros, lo que nos permite encontrar el producto de todos los números en la lista.
+
+La función `reduce()` es útil cuando se desea realizar operaciones acumulativas en una secuencia de elementos y reducirlos a un solo valor. Puede ser una herramienta poderosa para ciertas operaciones matemáticas y de reducción de datos.
