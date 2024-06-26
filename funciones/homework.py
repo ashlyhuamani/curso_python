@@ -43,3 +43,49 @@
 #print(numero_menor(*numeros))
 #print(numero_mayor(*numeros))
 #print(suma_numeros(*numeros))
+
+# tarea
+# crear una lista de alumnos con los siguientes campos 
+#nombre,apellido, edad celular, email
+#1.- actualizar los registros con un campo mas todos tendran en el campo de programas de estudio de enfermeria .
+#2. buscar el segundo regitro y actualizar su edad a 50 años  
+# Crear la lista de alumnos con los campos solicitados
+lista_alumnos = [
+    {
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "edad": 30,
+        "celular": "555-1234",
+        "email": "juan.perez@example.com",
+        "programas_estudio": "Enfermería"
+    },
+    {
+        "nombre": "Maria",
+        "apellido": "Gomez",
+        "edad": 40,
+        "celular": "555-5678",
+        "email": "maria.gomez@example.com",
+        "programas_estudio": "Enfermería"
+    },
+    {
+        "nombre": "Pedro",
+        "apellido": "Lopez",
+        "edad": 35,
+        "celular": "555-9012",
+        "email": "pedro.lopez@example.com",
+        "programas_estudio": "Enfermería"
+    }
+]
+
+# Actualizar todos los registros con un campo extra de programas de estudio de enfermería
+for alumno in lista_alumnos:
+    alumno["programas_estudio"] = "Enfermería"
+
+# Buscar el segundo registro y actualizar su edad a 50 años
+if len(lista_alumnos) >= 2:
+    lista_alumnos[1]["edad"] = 50
+
+# Imprimir la lista de alumnos actualizada
+print("Lista de alumnos actualizada:")
+for alumno in lista_alumnos:
+    print(alumno)

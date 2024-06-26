@@ -77,23 +77,87 @@
 # los numeros pares y otra con numeros impares
 
 # Definir la lista de 5 números de ejemplo
-numeros = [23, 4, 11, 8, 17]
+#numeros = [23, 4, 11, 8, 17]
 
 # Crear funciones lambda para separar los números pares e impares
-separar_pares_impares = lambda numeros: ([x for x in numeros if x % 2 == 0], [x for x in numeros if x % 2 != 0])
+#separar_pares_impares = lambda numeros: ([x for x in numeros if x % 2 == 0], [x for x in numeros if x % 2 != 0])
 
 # Obtener las listas de números pares e impares sin filtrar
-numeros_pares, numeros_impares = separar_pares_impares(numeros)
+#numeros_pares, numeros_impares = separar_pares_impares(numeros)
 
 # Imprimir los resultados
-print("Números pares:", numeros_pares)
-print("Números impares:", numeros_impares)
+#print("Números pares:", numeros_pares)
+#print("Números impares:", numeros_impares)
 
-int(input())
+#int(input())
 
-def mensaje(m:funciones)
-    print(m)
-def pedir_nombre()
-    nombre=input("ingresar nombre")
-    return nombre
-mensaje(pedir_nombre())
+#def mensaje(m:funciones)
+#    print(m)
+#def pedir_nombre()
+#    nombre=input("ingresar nombre")
+#    return nombre
+#mensaje(pedir_nombre())
+
+
+# MAP
+lista=[4,7,8,5,2]
+nueva_lista=list(map(lambda x:x+1,lista)) # por defecto retorna una lista 
+print(nueva_lista)
+
+#tengo un alist de alumnos que todos ellos aprobaron y pasan al tercer semestre
+#problema en la lista todos estan con el segundo semestre por lo que tendremos que crear un solucion 
+# que cambie el campo de semestre a 2 a 3
+
+#lista_alumnos=[
+
+#    { 
+#        "nombre":"abel",
+#        "edad":36,
+#        "semestre":2
+#   },
+#    {
+#       "nombre":"anthony",
+#       "edad":40,
+#       "semestre":2
+#    },
+#   {
+#      "nombre":"edhit",
+#       "edad":50,
+#       "semestre":2
+#    }
+#]
+#def objeto(e):
+#    
+#       e["programa de estudio"]="APSTI"
+#     return[
+#        e
+#    ]
+
+# FILTER
+#devolver los numeros pares de una lista 
+
+lista=[4,8,2,5,7,10,6,5,3,20]
+nueva_lista=list(filter(lambda x:x%2==1,lista))
+print(nueva_lista)
+
+lista_alumnos=[
+
+    { 
+        "nombre":"abel",
+        "edad":36,
+        "semestre":2
+    },
+    {
+       "nombre":"anthony",
+       "edad":40,
+       "semestre":2
+    },
+    {
+      "nombre":"edhit",
+       "edad":50,
+       "semestre":2
+    }
+]
+
+lista_filtrada=lista(filter(lambda x:x("edad")>50,lista_alumno))
+print(lista_filtrada)

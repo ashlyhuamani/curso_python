@@ -244,7 +244,7 @@ functools.reduce(funcion, iterable)
 ```
 * funcion: Es la función que se aplica de manera acumulativa a los elementos del iterable.
 * iterable: Es el iterable (lista, tupla, etc.) sobre el cual se aplicará la función de reducción.
-* 
+  
 Es importante tener en cuenta que a partir de Python 3, la función `reduce()` se ha movido al módulo functools, por lo que primero debes importarla antes de poder utilizarla.
 
  Aquí tienes un ejemplo básico de cómo se utiliza la función `reduce()` para encontrar el producto de una lista de números:
