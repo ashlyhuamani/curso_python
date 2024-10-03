@@ -17,7 +17,7 @@
         print(terminando tarea anterior)
 
     maricielo=alumno("maricielo",75869321,14,"yo@gmail")
-    maricielo.tarea("alicia")
+    maricielo.tarea("alicia") 
     maricielo.terminar_tarea()
     maricielo.tarea("alvarez")
 
